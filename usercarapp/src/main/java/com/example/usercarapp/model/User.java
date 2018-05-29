@@ -18,6 +18,8 @@ import lombok.Setter;
 
 @Entity
 public class User {
+	public static final String FIELD_USER = "user";
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.TABLE)
 	private int idUser;
