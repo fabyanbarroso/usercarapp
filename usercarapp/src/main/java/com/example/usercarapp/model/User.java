@@ -32,6 +32,6 @@ public class User {
 	@Column()
 	private String password;
 	
-	@OneToMany(fetch = FetchType.LAZY)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = Car.FIELD_USER)
 	Set<Car> cars;
 }
