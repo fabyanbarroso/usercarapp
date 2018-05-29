@@ -19,6 +19,8 @@ import lombok.Setter;
 @Entity
 public class Car {
 	
+	public static final String FIELD_USER = "user";
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private String idCar;
