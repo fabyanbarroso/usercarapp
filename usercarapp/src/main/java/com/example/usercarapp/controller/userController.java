@@ -38,6 +38,12 @@ public class userController {
 		return userMapper.modelToDto(user.get());
 	}
 	
+	@RequestMapping(value = "/{id}", method = { RequestMethod.PUT })
+	public void update(@PathVariable("id") Integer id, @RequestBody UserPostDTO dto) {
+		final User user = userMapper.dtoToModel(dto);
+		user.setIdUser(id);
+		userService.update(user);
+	
 	
 	
 	
