@@ -9,8 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import com.bgg.quizback.model.Quiz;
-
 import lombok.Getter;
 import lombok.Setter;
 
